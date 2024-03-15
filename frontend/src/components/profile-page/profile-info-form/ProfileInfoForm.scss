@@ -1,0 +1,72 @@
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  gap: 10px;
+
+  width: 100%;
+}
+
+.profile-info:hover {
+
+}
+
+.info-input {
+  display: flex;
+  width: 100%;
+
+  color: var(--grayscale_label);
+
+  background-color: var(--grayscale_body_background);
+  border: 0;
+  border-radius: 10px;
+
+  resize: none;
+
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+
+  padding: 2%;
+}
+
+.info-input:focus {
+  outline: none;
+}
+
+.info-input::placeholder {
+  color: var(--grayscale_line);
+
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+}
+
+.save-button {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+
+  appearance: none;
+  border-style: none;
+
+  background-color: var(--primary_middle);
+  color: var(--grayscale_title);
+
+  border-radius: 20px;
+
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+
+  padding: 2%;
+
+  width: 100%;
+}

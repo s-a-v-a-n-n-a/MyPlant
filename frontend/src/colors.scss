@@ -1,0 +1,46 @@
+body {
+  --primary_main: #78C584;
+  --primary_darkest: #094A14;
+  --primary_dark: #167226;
+  --primary_middle: #8EDB9C;
+  --primary_light: #D3FBDA;
+
+  --inner: #E4BC84;
+
+  --secondary_main: #D78244;
+  --secondary_darkest: #4B1F05;
+  --secondary_dark: #904114;
+  --secondary_middle: #F2B984;
+  --secondary_light: #FFECDB;
+
+  --tertiary_main: #D3488F;
+  --tertiary_darkest: #420725;
+  --tertiary_dark: #7A184A;
+  --tertiary_middle: #DE79AC;
+  --tertiary_light: #FFD7EB;
+
+  --error_main: #DC3232;
+  --error_darkest: #640A05;
+  --error_lightest: #FFDBD6;
+
+  --success_main: #B1DB58;
+  --success_darkest: #486212;
+  --success_lightest: #EDFFC6;
+
+  --warning_main: #FFD600;
+  --warning_darkest: #6C4A08;
+  --warning_lightest: #FFF5C1;
+
+  --grayscale_title: #111417;
+  --grayscale_body: #0B2828;
+  --grayscale_label: #273F3F;
+  --grayscale_icons: #3D4F4F;
+  --grayscale_line: #A5C0BB;
+  --grayscale_input_background: #E7F0ED;
+  --grayscale_body_background: #E7F0ED;
+  --grayscale_white: #F4FBF9;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {}
+}

@@ -1,0 +1,79 @@
+{
+  "users": {
+    "signup": {
+      "url": "/signup",
+      "type": "post"
+    },
+    "signin": {
+      "url": "/signin",
+      "type": "post"
+    },
+    "person": {
+      "url": "/:id/",
+      "type": "get"
+    },
+    "whoami": {
+      "url": "/whoami/",
+      "type": "get"
+    },
+    "logout": {
+      "url": "/logout",
+      "type": "delete"
+    },
+    "userInfo": {
+      "url": "/:id/",
+      "type": "put"
+    }
+  },
+  "plants": {
+    "add": {
+      "url": "/",
+      "type": "post"
+    },
+    "get": {
+      "url": "/",
+      "type": "get"
+    },
+    "deletePlant": {
+      "url": "/:id/",
+      "type": "delete"
+    },
+    "plantInfo": {
+      "url": "/:id/",
+      "type": "put"
+    },
+    "putBlogId": {
+      "url": "/:id/blogId",
+      "type": "put"
+    }
+  },
+  "blogs": {
+    "add": {
+      "url": "/",
+      "type": "post"
+    },
+    "getById": {
+      "url": "/:id/",
+      "type": "get"
+    },
+    "get": {
+      "url": "/:id/",
+      "type": "get"
+    },
+    "change": {
+      "url": "/:id/",
+      "type": "put"
+    }
+  },
+  "comments": {
+    "addComment": {
+      "url": "/",
+      "type": "post"
+    },
+    "getComments": {
+      "url": "/",
+      "type": "get"
+    }
+  },
+  "host": "http://localhost:8000"
+}

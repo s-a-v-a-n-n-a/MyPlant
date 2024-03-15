@@ -1,0 +1,65 @@
+.plant-search-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+  box-sizing: border-box;
+
+  background: var(--secondary_light);
+  border: 5px solid var(--secondary_main);
+  border-radius: 50px;
+
+  height: 95%;
+  width: fit-content;
+
+  gap: 5px;
+}
+
+.plant-search {
+  display: flex;
+  flex: 1;
+  margin-left: 10px;
+
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 34px;
+
+  color: var(--secondary_main);
+
+  background-color: transparent;
+
+  border: 0 !important;
+  appearance: none;
+}
+
+.plant-search:focus {
+  outline: none;
+}
+
+.plant-search::placeholder {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 42px;
+
+  color: var(--secondary_middle);
+}
+
+.plant-search-image {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+  margin-top: 3px;
+  margin-left: 20px;
+  width: 80%;
+  height: 80%;
+  //height: 40px;
+
+  color: var(--secondary_main);
+}

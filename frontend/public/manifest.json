@@ -1,0 +1,9 @@
+{
+  "short_name": "my-plant",
+  "name": "my-plant",
+  "icons": [],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

@@ -1,0 +1,82 @@
+.comment-element-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+  gap: 20px;
+
+  padding: 10px;
+
+  background-color: var(--primary_middle);
+  border-radius: 20px;
+
+  width: 100%;
+  height: 100px;
+}
+
+.main-comment-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  gap: 5px;
+
+  align-self: flex-start;
+  margin-bottom: auto;
+
+  font-family: Ubuntu;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+}
+
+.username-wrap {
+  font-weight: 600;
+}
+
+.comment-text {
+  display: flex;
+
+  color: var(--grayscale-title);
+  font-family: Ubuntu;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+}
+
+.like-section {
+  display: flex;
+  flex-direction: row;
+
+  gap: 5px;
+
+  align-self: flex-end;
+  margin-top: auto;
+
+  justify-self: flex-end;
+  margin-left: auto;
+}
+
+.button-props {
+  background-color: transparent;
+  appearance: none;
+  border: none;
+}
+
+.reply-button {
+  @extend .button-props;
+}
+
+.like-button {
+  @extend .button-props;
+}
+
+.dislike-button {
+  @extend .button-props;
+}

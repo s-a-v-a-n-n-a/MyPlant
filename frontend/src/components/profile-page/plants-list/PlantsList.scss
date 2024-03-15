@@ -1,0 +1,43 @@
+@import '../../common-styles/Scroll.scss';
+
+.plants-list-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  //min-height: 100%;
+  height: fit-content;
+  width: 100%;
+  background-color: var(--grayscale_body_background);
+
+  gap: 20px;
+
+  padding: 20px;
+}
+
+.plants-list-header {
+  color: var(--grayscale-title);
+
+  font-family: Ubuntu;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 44px;
+
+  margin-top: 20px;
+}
+
+.plants-list {
+  width: 100%;
+
+  list-style-type: none;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  gap: 10px;
+}

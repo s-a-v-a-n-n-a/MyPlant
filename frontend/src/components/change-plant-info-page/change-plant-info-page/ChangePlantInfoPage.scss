@@ -1,0 +1,94 @@
+.change-page-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 100%;
+  height: 100%;
+
+  background-color: var(--grayscale_white);
+}
+
+.change-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  //height: auto;
+  overflow: hidden;
+
+  border-radius: 30px;
+  border: 3px solid var(--grayscale_title);
+
+  font-family: Ubuntu;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-align: left;
+
+  color: var(--grayscale_title);
+
+  padding: 20px;
+
+  resize: none;
+}
+
+.change-text:focus {
+  outline: none;
+}
+
+.change-text::placeholder {
+  color: var(--grayscale_line);
+}
+
+.handle-changes-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 80px;
+  width: 100%;
+
+  margin-bottom: 10px;
+}
+
+.common-buttons-style {
+  border: none;
+  border-radius: 20px;
+
+  text-align: center;
+  font-family: Ubuntu;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  color: var(--grayscale_title);
+
+  height: 100%;
+  width: 48%;
+
+  transition: background-color 0.4s;
+}
+
+.accept-button {
+  @extend .common-buttons-style;
+
+  background: var(--success_main);
+}
+
+.accept-button:hover {
+  background: var(--success_lightest);
+}
+
+.decline-button {
+  @extend .common-buttons-style;
+
+  background: var(--error_main);
+}
+
+.decline-button:hover {
+  background: var(--error_lightest);
+}

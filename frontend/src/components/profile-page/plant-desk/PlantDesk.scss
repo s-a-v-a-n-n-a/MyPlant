@@ -1,0 +1,206 @@
+.plant-desk-wrap {
+  @extend .list-desk-appearance;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+  min-width: fit-content;
+}
+
+.list-desk-appearance {
+  background-color: var(--primary_middle);
+
+  width: 100%;
+  min-height: 100%;
+  height: fit-content;
+
+  border-radius: 50px;
+  padding: 30px;
+}
+
+.rolling-button {
+  display: flex;
+  width: fit-content;
+  //flex-grow: 0;
+
+  appearance: none;
+  border-style: none;
+
+  background-color: transparent;
+}
+
+.plant-info-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  width: 100%;
+  //flex-grow: 1;
+
+  gap: 15px;
+}
+
+.roll-icon {
+  width: 70px;
+  height: 70px;
+}
+
+.additional-plant-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  max-width: 100%;
+
+  background: linear-gradient(180deg, var(--primary_light) 0%, var(--primary_middle) 100%);
+
+  gap: 30px;
+  padding: 10px;
+}
+
+.plant-text-snippet {
+  font-family: Ubuntu;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+  color: var(--grayscale_title);
+}
+
+.big-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 10px 20px 10px 20px;
+
+  appearance: none;
+  border: none;
+  border-radius: 20px;
+
+  width: 100%;
+
+  font-family: Ubuntu;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+
+  color: var(--grayscale_title);
+
+  transition: background-color 0.5s;
+}
+
+.goto-blog-button {
+  @extend .big-button;
+
+  background-color: var(--secondary_middle);
+
+  transition: background-color 0.5s;
+}
+
+.goto-blog-button:hover {
+  background-color: var(--secondary_light);
+}
+
+.plant-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+  width: 100%;
+
+  gap: 15px;
+}
+
+.plant-photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+  background-color: var(transparent);
+
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.main-plant-info {
+  display: flex;
+  flex-direction: column;
+
+  gap: 15px;
+}
+
+.reset-watering-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: none;
+
+  max-width: 90%;
+  width: 420px;
+  height: 40px;
+
+  border-radius: 10px;
+
+  background-color: var(--secondary_main);
+}
+
+.header-text {
+  color: var(--grayscale-title);
+
+  font-family: Ubuntu;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+  text-align: left;
+}
+
+.plant-text {
+  white-space: pre-line;
+
+  color: var(--grayscale-body);
+
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+}
+
+.add-blog-button {
+  @extend .big-button;
+
+  background-color: var(--tertiary_main);
+
+  transition: background-color 0.5s;
+}
+
+.add-blog-button:hover {
+  background-color: var(--tertiary_middle);
+}
+
+.delete-plant-button {
+  display: flex;
+
+  justify-self: flex-end;
+  margin-left: auto;
+
+  border: none;
+  background-color: transparent;
+  appearance: none;
+
+  color: var(--error_main);
+}

@@ -1,0 +1,54 @@
+@import '../../profile-page/plant-desk/PlantDesk';
+
+.article-preview-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  width: 100%;
+
+  gap: 10px;
+
+  border-radius: 40px;
+  background-color: var(--primary_middle);
+
+  padding: 20px;
+}
+
+.article-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+  gap: 10px;
+}
+
+.article-snippet-text {
+  @extend .plant-text;
+
+  height: fit-content;
+}
+
+.common-header-features {
+  color: var(--grayscale-title);
+  font-family: Ubuntu;
+  font-size: 36px;
+  font-style: normal;
+  line-height: normal;
+
+  text-align: left;
+}
+
+.author-name-text {
+  @extend .common-header-features;
+
+  font-weight: 500;
+}
+
+.plant-name-text {
+  @extend .common-header-features;
+
+  font-weight: normal;
+}

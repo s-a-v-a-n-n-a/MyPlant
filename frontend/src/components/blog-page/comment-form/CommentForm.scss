@@ -1,0 +1,34 @@
+.add-comment-input {
+  border: none;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  padding: 0 20px 0 20px;
+
+  justify-self: flex-end;
+  margin-top: auto;
+
+  width: 100%;
+  height: 70px;
+
+  border-radius: 20px;
+
+  font-family: Ubuntu;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: var(--grayscale_title);
+
+  background-color: var(--grayscale_line);
+}
+
+.add-comment-input::placeholder {
+  color: var(--grayscale_icons);
+}
+
+.add-comment-input:focus {
+  outline: none;
+}

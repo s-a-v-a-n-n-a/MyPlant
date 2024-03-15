@@ -1,0 +1,109 @@
+@import '../plant-desk/PlantDesk';
+
+.plant-form-wrap {
+  @extend .list-desk-appearance;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  gap: 20px;
+}
+
+.main-info-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+  min-height: 100%;
+  height: 150px;
+  width: 100%;
+
+  gap: 20px;
+}
+
+.add-plant-photo {
+  display: flex;
+  flex-direction: unset;
+  justify-content: center;
+  align-items: center;
+
+  width: 150px;
+  //height: 200px;
+
+  min-height: 100%;
+  height: 100%;
+  //width: 30%;
+
+  border-radius: 25px;
+  background: var(--grayscale_line);
+
+  color: var(--grayscale_icons);
+  text-align: center;
+  font-family: Ubuntu;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  padding: 10px;
+}
+
+.plant-info-input-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 100%;
+  width: 100%;
+}
+
+.plant-info-input {
+  border: none;
+
+  border-radius: 15px;
+  background-color: var(--grayscale_icons);
+
+  width: 100%;
+
+  padding: 10px 10px 10px 10px;
+
+  color: var(--grayscale_white);
+  font-family: Ubuntu;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.plant-info-input:focus {
+  outline: none;
+}
+
+.plant-info-input::placeholder {
+  color: var(--grayscale_line);
+}
+
+.create-plant-button {
+  @extend .big-button;
+
+  background-color: var(--success_main);
+}
+
+.create-plant-button:hover {
+  background-color: var(--success_lightest);
+}
+
+.required-input {
+}
+
+.required-input.red {
+  background-color: var(--error_main);
+}
+
+.required-input.red::placeholder {
+  color: var(--error_darkest);
+}
