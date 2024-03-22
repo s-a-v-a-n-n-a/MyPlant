@@ -1,6 +1,6 @@
 FROM openjdk:17-jdk-slim as builder
 EXPOSE 8080
-WORKDIR .
+WORKDIR /app
 ADD ./target/*.jar app.jar
 # RUN java -Djarmode=layertools -jar app.jar extract
 

@@ -1,10 +1,10 @@
-version: "3.9"
+version: "2"
 
 services:
   myplant:
     image: 'docker-spring-boot-postgres:latest'
     build: backend/myplant/
-    container_name: app
+    container_name: myplant
     mem_limit: 512m
     ports:
       - "8080:8080"
@@ -15,6 +15,14 @@ services:
       - SPRING_JPA_HIBERNATE_DDL_AUTO=update
     depends_on:
       - db
+
+  frontend:
+    build: frontend/
+    container_name: frontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - myplant
 
   db:
     image: postgres:latest
